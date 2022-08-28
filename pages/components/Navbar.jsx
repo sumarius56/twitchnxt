@@ -126,7 +126,7 @@ const Navbar = () => {
         <Menu as='div' className='relative text-left'>
             <div className='flex'>
               <Menu.Button>
-                <Image className='rounded-full' src={session.user.image} width='45' height='45' />
+                <Image className='rounded-full' alt='/' src={session.user.image} width='45' height='45' />
               </Menu.Button>
             </div>
 
@@ -143,7 +143,7 @@ const Navbar = () => {
                 <div className='py-1'>
                   <Menu.Item>
                     {({ active }) => (
-                      <a
+                      <Link
                         href='/account'
                         className={classNames(
                           active
@@ -153,7 +153,7 @@ const Navbar = () => {
                         )}
                       >
                         Account
-                      </a>
+                      </Link>
                     )}
                   </Menu.Item>
               

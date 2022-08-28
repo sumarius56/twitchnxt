@@ -4,7 +4,7 @@ import React from 'react'
 const CategoriesItem = ({img, title, viewers ,tag1, tag2}) => {
   return (
     <div>
-     <Image src={img} width='261' height='350' alt='' />
+     <Image src={img} width='261' height='350' alt='/' />
      <div>
       <p className='font-bold'>{title}</p>
       <p className='text-sm text-gray-500 py-[2px]'>{viewers}</p>

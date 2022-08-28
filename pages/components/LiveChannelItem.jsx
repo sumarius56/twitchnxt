@@ -4,10 +4,10 @@ import React from 'react'
 const LiveChannelItem = ({img,title,profile_img,user,game}) => {
   return (
     <div className='p-2'>
-      <Image src={img} />
+      <Image src={img} alt='/' />
       <div className='flex pt-2'>
        <div className='pr-2' >
-        <Image src={profile_img} width='60' height='60'  className='rounded-full'/>
+        <Image src={profile_img} width='60' height='60'  alt='/' className='rounded-full'/>
        </div>
        <div>
         <p className='text-sm font-bold'>{title}</p>
