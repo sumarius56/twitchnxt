@@ -31,7 +31,7 @@ const Navbar = () => {
         <Image className='cursor-pointer' src={Logo} alt='/' width='36' height='36' />
        </a>
       </Link>
-      <p className='p-4'>Browse</p>
+      <p className='p-4 cursor-pointer'>Browse</p>
       <div className='p-4'>
       <Menu as='div' className='relative text-left'>
             <div className='flex'>
@@ -103,13 +103,13 @@ const Navbar = () => {
       </div>
      </div>
      {/* Middle Side */}
-     <div className='hidden md:flex grow-[2] items-center justify-center'>
+     <div className='hidden md:flex grow-[2] items-center  justify-center'>
       <div className='bg-gray-500  text-white flex justify-between items-center max-w-[400px] w-full m-auto p-2 rounded-2xl'>
        <div>
         <input placeholder='Search' type='text' className=' bg-transparent border-none text-white focus:outline-none' />
        </div>
        <div>
-        <BsSearch />
+        <BsSearch className='cursor-pointer' />
        </div>
       </div>
      </div>
@@ -164,7 +164,7 @@ const Navbar = () => {
                         
                         className={classNames(
                           active
-                            ? 'bg-gray-500 text-gray-100'
+                            ? 'bg-gray-500 cursor-pointer text-gray-100'
                             : 'text-gray-200',
                           'block px-4 py-2 text-sm'
                         )}
