@@ -11,7 +11,6 @@ const Main = () => {
       <LiveChannels />
       <IconBar />
       <Categories />
-
       </div>
     
   )
